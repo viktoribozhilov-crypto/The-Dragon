@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Board</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <div class="board-wrap">
+        <div class="hud">
+          <div id="level-label" class="level-label">Level 1</div>
+          <div id="status-text" class="status-text">Find the fish</div>
+        </div>
+        <div id="board" class="board" aria-label="Game board"></div>
+      </div>
+
+      <div class="controls" aria-label="Movement controls">
+        <div class="button-row top-row">
+          <button class="control-btn" data-dir="up" aria-label="Move up">
+            <img src="./Копие%20на%20up.png" alt="up" />
+          </button>
+        </div>
+        <div class="button-row middle-row">
+          <button class="control-btn" data-dir="left" aria-label="Move left">
+            <img src="./Копие%20на%20left.png" alt="left" />
+          </button>
+          <button class="control-btn" data-dir="down" aria-label="Move down">
+            <img src="./Копие%20на%20down.png" alt="down" />
+          </button>
+          <button class="control-btn" data-dir="right" aria-label="Move right">
+            <img src="./Копие%20на%20right.png" alt="right" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
